@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import girl from './girl.jpeg';
+import Delete from './components/Delete';
+import Edit from './components/Edit';
+import Enter from './components/Enter'
 import './App.css';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      name: 'wishes',
-      caption: ''
+      caption: '',
+      image: ''
     }
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(e){
+    this.setState({ [e.target.caption]: e.target.value});
   }
   render(){
   return (
@@ -18,22 +24,23 @@ class App extends Component {
       <header>
         <h1>I WISH YOU WOULD</h1>
         <picture className= 'logo-picture'>
-          <img src = {'./girl.jpeg'} alt='picture of fingers crossed'/>
+          <img src = {girl} alt='picture of fingers crossed'/>
         </picture>
       </header>
       
       <form>
-      <input/>
+      <input name='caption' onChange={this.handleChange} placeholder='Caption'/>
       <h6>Input your caption here</h6>
-      <input/>
+      <input name= 'image' onChange={this.handleChange} placeholder='Image'/>
       <h6>Input your picture here</h6>
-      <button> ENTER </button>
+      <Enter/>
       </form>
 
       <section>
-        <button>EDIT</button>
-        <button>DELETE</button>
-      </section>
+       {/* <Edit/> */}
+      {/* <Delete/> */}
+     </section>
+
     </div>
   );
 }
