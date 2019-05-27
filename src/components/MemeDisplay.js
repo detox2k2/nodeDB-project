@@ -34,17 +34,17 @@ class MemeDisplay extends Component {
     let  MemesList  = this.props.memes.map((element, index) => {
       
       return (
-        <div key={index} className="meme-list">
+        <form key={index} className="meme-list">
           <h2 className= 'meme-caption'>{element.caption}</h2>
           <img className="meme-image" src={element.image} alt='' />
           <button onClick={() => this.editMeme(element.caption)} className= 'edit-delete-buttons'>Edit</button>
           <button onClick={() => this.deleteMeme (element.caption)} className= 'edit-delete-buttons'>Delete</button>
-        </div>
+        </form>
       );
     });
     return (
       
-      <div className ='meme-container'  >
+      <form className ='meme-container'  >
         
         <div className="meme-container">{MemesList}</div>
         {this.state.edit === true ? (
@@ -54,7 +54,7 @@ class MemeDisplay extends Component {
             meme={this.state.meme}
           />
         ) : null}
-      </div>
+      </form>
     );
   }
 }
