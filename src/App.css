@@ -1,1 +1,71 @@
+body {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(188, 230, 243))
+}
 
+
+
+.meme-image {
+    max-width: 100px;
+}
+
+.form-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30pt
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50pt;
+    color: darkgrey ;
+    text-shadow: 5px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30pt
+}
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    color: rgb(44, 42, 42) ;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: flex;
+}
+.App{
+
+}
+.meme-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.edit-delete-buttons {
+    border-radius: 12px;
+    color: black;
+    background-color: lightgrey;
+    padding: 10px 24px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 10px;
+    margin: 10px;
+}
+.form-component-enter{
+    border-radius: 12px;
+    color: black;
+    background-color: lightgrey;
+    padding: 8px 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 10px;
+}
+.form-component-input {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}

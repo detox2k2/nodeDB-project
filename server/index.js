@@ -8,8 +8,8 @@ const url = '/api/memes'
 
 app.get(url, memeController.getMemes );
 app.post(url, memeController.addMeme);
-app.put(`${url}/:id`, memeController.editMeme);
-app.delete(`${url}/:id`, memeController.deleteMeme)
+app.put(`${url}/:caption`, memeController.editMeme);
+app.delete(`${url}/:caption`, memeController.deleteMeme)
 
 const SERVER_PORT = 5058;
 app.listen(SERVER_PORT, () => {
