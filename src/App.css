@@ -9,6 +9,15 @@ body {
     border: 2px solid black
 }
 
+.meme-image-2 {
+    max-width: 400px;
+    margin-top: 40px;
+    margin-left: 610px;
+    border: 4px solid black;
+}
+
+
+
 .form-component{
     display: flex;
     justify-content: center;
@@ -42,9 +51,7 @@ input {
 button {
     display: flex;
 }
-.App{
 
-}
 .meme-list {
     display: flex;
     flex-direction: column;
