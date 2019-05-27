@@ -5,7 +5,8 @@ body {
 
 
 .meme-image {
-    max-width: 100px;
+    max-width: 400px;
+    border: 2px solid black
 }
 
 .form-component{
@@ -20,10 +21,11 @@ h1 {
     font-size: 50pt;
     color: darkgrey ;
     text-shadow: 5px 5px black;
+    border: 2px, solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top:30pt
+    padding-top:30pt;
 }
 h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -45,6 +47,7 @@ button {
 }
 .meme-list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
@@ -68,4 +71,11 @@ button {
 }
 .form-component-input {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.meme-caption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30pt;
+    color: white ;
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+    text-align: center;
 }

@@ -49,6 +49,7 @@ this.updateMemes = this.updateMemes.bind(this)
   }
 
   render(){
+    const {memes} = this.state;
     return (
       <div className="App">
         <Main/>
@@ -58,7 +59,7 @@ this.updateMemes = this.updateMemes.bind(this)
         createMeme={e => this.createMeme(e)}
         />
         <MemeDisplay
-          memes={this.state.memes}
+          memes={memes}
           updateMemes={this.updateMemes}
         />
         </div>

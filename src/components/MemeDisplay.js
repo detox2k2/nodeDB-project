@@ -31,20 +31,21 @@ class MemeDisplay extends Component {
   }
 
   render() {
-    let MemesList = this.props.memes.map((element, index) => {
-      // console.log(element)
+    let  MemesList  = this.props.memes.map((element, index) => {
+      
       return (
         <div key={index} className="meme-list">
-          <h2>{element.name}</h2>
+          <h2 className= 'meme-caption'>{element.caption}</h2>
           <img className="meme-image" src={element.image} alt='' />
-          <h4>{element.description}</h4>
           <button onClick={() => this.editMeme(element.caption)} className= 'edit-delete-buttons'>Edit</button>
           <button onClick={() => this.deleteMeme (element.caption)} className= 'edit-delete-buttons'>Delete</button>
         </div>
       );
     });
     return (
+      
       <div className ='meme-container'  >
+        
         <div className="meme-container">{MemesList}</div>
         {this.state.edit === true ? (
           <Edit

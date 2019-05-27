@@ -31,17 +31,18 @@ class Edit extends Component {
             
                     <h4>Caption</h4>
                     <input className = "form-component-input"
-                        caption='editCaption'
+                        name='editCaption'
                         value={this.state.editCaption}
                         onChange={(e) => this.handleChange(e)}
                         />
                     <h4>Image</h4>
                     <input className = "form-component-input"
-                        image='editImage'
+                        name='editImage'
                         value={this.state.editImage}
                         onChange={(e) => this.handleChange(e)}
                         />
                     <button className = 'form-component-enter' onClick= {e => { this.editMeme(e);}}> Enter </button>
+                    
                 </form>
             </section>
         );

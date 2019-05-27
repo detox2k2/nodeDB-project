@@ -19,8 +19,9 @@ const addMeme = (req, res) => {
 
 };
 const deleteMeme = (req, res) => {
+    const {caption} =  req.params
     for (let i = 0; i < memes.length; i++) {
-      if (memes[i].caption === req.params.caption) {
+      if (memes[i].caption === caption) {
         memes.splice(i, 1);
       }
     }
