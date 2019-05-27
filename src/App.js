@@ -52,7 +52,7 @@ this.updateMemes = this.updateMemes.bind(this)
   render(){
     const {memes} = this.state;
     return (
-      <div className="App">
+      <section className="App">
         <Main/>
         <Form
         handleCaption={this.handleCaption}
@@ -63,7 +63,7 @@ this.updateMemes = this.updateMemes.bind(this)
           memes={memes}
           updateMemes={this.updateMemes}
         />
-        </div>
+        </section>
     )
   }
 }

@@ -83,6 +83,7 @@ button {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30pt;
     color: white ;
+    margin-bottom: 7px;
     text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
     text-align: center;
 }
