@@ -26,7 +26,7 @@ class Edit extends Component {
     render(){
         return (
             <section>
-                <form className='form-component'>
+                <div className='form-component'>
                     
             
                     <h4>Caption</h4>
@@ -43,7 +43,7 @@ class Edit extends Component {
                         />
                     <button className = 'form-component-enter' onClick= {e => { this.editMeme(e);}}> Enter </button>
                     
-                </form>
+                </div>
             </section>
         );
     }

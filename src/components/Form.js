@@ -5,7 +5,7 @@ class Form extends Component {
 
     render () {
         return(
-            <form >
+            <div className="form-component">
             <form className="form-component">
             <br/>
             <h4>Caption</h4>
@@ -16,7 +16,7 @@ class Form extends Component {
             <button className= 'form-component-enter' onClick={(e)=>this.props.createMeme(e)}>Enter</button>
      
             </form>
-            </form>
+            </div>
         )
     }
 }
