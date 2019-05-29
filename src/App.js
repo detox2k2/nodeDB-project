@@ -21,7 +21,7 @@ this.handleImage = this.handleImage.bind(this);
 this.updateMemes = this.updateMemes.bind(this)
   }
   componentDidMount (){
-    axios.get('/api/memes').then(response => {
+    axios.get('/api/memes').then(response => {console.log(response.data)
       this.setState({ memes: response.data});
     });
   }

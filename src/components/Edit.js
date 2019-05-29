@@ -18,9 +18,13 @@ class Edit extends Component {
         axios.put(`/api/memes/${this.props.meme}`,{
             caption: this.state.editCaption,
             image: this.state.editImage,
-        }).then(response =>{this.props.updateMemes(response.data)
+        }).then(response =>{ console.log(response.data)
+            this.props.updateMemes(response.data)
         this.props.toggleEdit()
     })
+    .catch(error => {
+        console.log(error);
+      })
     }
 
     render(){
